@@ -3,6 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Noto Sans", sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -19,9 +20,14 @@ body {
 }
 
 .display {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5px;
   width: 95%;
   height: 15%;
   border: 1px solid red;
+  font-size: 40px;
 }
 
 .clear-buttons {
@@ -37,7 +43,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 40px;
-  font-family: "Noto Sans", sans-serif;
   width: 45%;
   height: 80%;
   border: 1px solid peru;
@@ -58,7 +63,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 40px;
-  font-family: "Noto Sans", sans-serif;
   width: 20%;
   height: 20%;
   border: 1px solid black;

@@ -1,10 +1,21 @@
 let buttons = document.querySelectorAll(".button");
+let display = document.querySelector(".display");
+let a = 0;
+let b = 0;
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    console.log(button.innerHTML);
+    capture(button.innerHTML);
   });
 });
+
+let number = "";
+
+function capture(pressed) {
+  number += pressed;
+  console.log(number);
+  display.innerHTML = number;
+}
 
 function subtract(a, b) {
   return a - b;
@@ -23,5 +34,3 @@ function divide(a, b) {
 }
 
 function operate(operator, a, b) {}
-
-function display() {}
