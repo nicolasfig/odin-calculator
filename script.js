@@ -4,6 +4,7 @@ let clear = document.querySelector(".clear");
 let del = document.querySelector(".delete");
 let a = 0;
 let b = 0;
+let operator = "";
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -30,24 +31,26 @@ function capture(pressed) {
   }
   switch (pressed) {
     case "+":
+      operator = pressed;
       number = "";
       display.innerHTML = number;
       break;
     case "-":
+      operator = pressed;
       number = "";
       display.innerHTML = number;
       break;
     case "*":
+      operator = pressed;
       number = "";
       display.innerHTML = number;
       break;
     case "/":
+      operator = pressed;
       number = "";
       display.innerHTML = number;
       break;
     case "=":
-      number = "";
-      display.innerHTML = number;
       break;
     case ".":
       break;
@@ -70,4 +73,15 @@ function divide(a, b) {
   }
 }
 
-function operate(operator, a, b) {}
+function operate(operator, a, b) {
+  switch (operator) {
+    case "+":
+      break;
+    case "-":
+      break;
+    case "*":
+      break;
+    case "/":
+      break;
+  }
+}
