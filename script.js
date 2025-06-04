@@ -46,9 +46,9 @@ function capture(pressed) {
       break;
     case "=":
       if (operator !== "" && number.length > 0) {
-        b = Number(number.substring(number.length - 1));
+        b = Number(number.substring(0, number.length - 1));
         number = "";
-        console.log(b);
+        console.log(a, b);
         operate(operator, a, b);
       }
       break;
@@ -58,7 +58,6 @@ function capture(pressed) {
 }
 
 function add(a, b) {
-  console.log(a + b);
   return a + b;
 }
 
